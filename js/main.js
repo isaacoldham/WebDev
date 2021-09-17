@@ -7,7 +7,7 @@ function updateContent() {
       ]
 
     var content = document.getElementById('content');
-    links.forEach(element => {
-        content.innerHTML += "<li>" + label + "<li>";
-    });
+    links.forEach(
+        content.innerHTML += "<li>" + label + "<li>"
+    );
 }
