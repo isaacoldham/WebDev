@@ -88,4 +88,5 @@ a.menuItem:hover {
 
 #content{
     text-align:center;
+    padding-inline-start: 0px;
 }
