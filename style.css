@@ -86,3 +86,7 @@ a.menuItem:hover {
 .links:hover{
     background-color:#4095c6;
 }
+
+#content{
+    text-align:center;
+}
