@@ -14,8 +14,8 @@ function updateContent() {
     console.log("this is working")
     
 
-    for (var arrayIndex in links) {
-        content.innerHTML += "<li><a class='links'><h3>" + links[arrayIndex].label + "</h3></a></li>";
+    for (var i in links) {
+        content.innerHTML += "<li><a href="+links[i].url+" class='links'><h3>" + links[i].label + "</h3></a></li>";
     }
     // links.forEach(element => {
     //     content.innerHTML += "<li>" + links.label.this + "</li>";
