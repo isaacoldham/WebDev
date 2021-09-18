@@ -1,3 +1,4 @@
+console.log("why you no working")
 function updateContent() {
     const links = [
         {
