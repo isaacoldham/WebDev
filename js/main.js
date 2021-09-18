@@ -1,5 +1,6 @@
 console.log("why you no working")
 function updateContent() {
+    console.log("update content ran")
     const links = [
         {
           label: "Week1 notes",
