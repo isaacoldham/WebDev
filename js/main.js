@@ -8,6 +8,7 @@ function updateContent() {
 
     var content = document.getElementById('content');
     content.innerHTML += "<li>" + label + "<li>";
+    console.log("this is working")
     
     links.forEach(label => {
         content.innerHTML += "<li>" + label + "<li>";
