@@ -5,7 +5,7 @@ const links = [
     }
 ]
 
-
+console.table(links);
 
 function updateContent() {
     console.log("update content ran")
@@ -13,7 +13,11 @@ function updateContent() {
     var content = document.getElementById('content');
     console.log("this is working")
     
-    links.forEach(element => {
-        content.innerHTML += "<li>" + links.label.this + "</li>";
-    });
+
+    for (var arrayIndex in links) {
+        content.innerHTML += "<li>" + links[arrayIndex].label + "</li>";
+    }
+    // links.forEach(element => {
+    //     content.innerHTML += "<li>" + links.label.this + "</li>";
+    // });
 }
