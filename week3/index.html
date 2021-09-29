@@ -78,7 +78,7 @@
 
     function filter() {
       const filterPeople = inventors.filter(function (inventor) { return inventor.year >= 1500 && inventor.year <= 1600 });
-      console.log('People born in the 1500\'s = ' + filterPeople);
+      console.log(filterPeople);
     }
     filter();
 
@@ -90,9 +90,12 @@
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
-    Array.prototype.sort();
-    inventors.sort();
-    console.log(inventors);
+    const oldToYoung = inventors.sort((first, second) => {
+      let inventor = first.passed - first.year;
+      let nextInventor = second.passed - second.year;
+      return  nextInventor - inventor;
+    });
+    console.log(oldToYoung);
 
 
     // Array.prototype.reduce()
