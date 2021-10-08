@@ -96,7 +96,6 @@ a.menuItem {
     grid-template-columns: 200px 200px 200px;
 }
 
-// for some css stylings
 body {
   display: flex;
   justify-content: center;
@@ -107,5 +106,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #AAA;
+  color: white;
 }
