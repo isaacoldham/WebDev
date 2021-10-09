@@ -96,7 +96,7 @@ a.menuItem {
     grid-template-columns: 200px 200px 200px;
 }
 
-body {
+.divboard {
   display: flex;
   justify-content: center;
 }
