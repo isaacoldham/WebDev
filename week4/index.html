@@ -18,7 +18,7 @@
 
   </header>
   <br><br>
-  <div class="game-board">
+  <div class="divboard">
     <div class="box" id="box1">1</div>
     <div class="box" id="box2">2</div>
     <div class="box" id="box3">3</div>
@@ -29,6 +29,9 @@
     <div class="box" id="box8">8</div>
     <div class="box" id="box9">9</div>
   </div>
+  <br>
+  <button id="reset">Reset</button>
+  <br>
 
   <div style="text-align:center" id="wrapper">
     To view the code for all my projects
@@ -36,7 +39,32 @@
   </div>
 
   <script>
+    const divBoard = document.querySelector('.divBoard');
+    const resetButton = document.getElementById('reset');
+    const player1 = 'X';
+    const player2 = 'O';
+    let player = player1;
+    function addPiece(e) {
+      console.log(e.target);
+      e.target.innerHTML = player;
+      if (player === player1) player = player2;
+      else player = player1;
+    }
 
+    function resetBoardDiv() {
+      const divBoard = document.querySelector('.divBoard');
+      for (let i = 0; i < divBoard.children.length; i++) {
+        divBoard.children[i].innerText = '';
+      }
+      const children = Array.from(divBoard.children);
+      const empty = children.filter(function (child) {
+        return child.innerText == 'X' || child.innerText == 'O';
+      });
+      console.log(empty);
+    }
+    board.addEventListener('click', addPiece);
+    divBoard.addEventListener('click', addPiece);
+    reset.addEventListener('click', resetBoardDiv);
   </script>
 </body>
 
