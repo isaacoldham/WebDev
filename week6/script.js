@@ -1,20 +1,6 @@
 let toDoHTML = '<li class="listItem">Task</li>'
+//let toDo = { id, content, completed}
 let toDoList = [
-    {
-        id: Date.now(),
-        content: 'Add a task to start your to do list!',
-        completed: false
-    },
-    {
-        id: Date.now(),
-        content: 'Testing',
-        completed: true
-    },
-    {
-        id: Date.now(),
-        content: 'another test',
-        completed: false
-    },
     {
         id: Date.now(),
         content: 'Add a task to start your to do list!',
@@ -26,13 +12,13 @@ let toDoList = [
 
 
 window.addEventListener("load", () => { showToDoList(); });
+document.getElementById("submit").addEventListener("click",() => { addTask(); });
 
 function showToDoList() {
     const toDoListElement = document.getElementById("toDoList");
     toDoListElement.innerHTML = "";
     renderToDoList(toDoList, toDoListElement);
 }
-
 function renderToDoList(toDos, parent) {
     toDos.forEach(toDo => {
         parent.appendChild(renderOneTask(toDo));
@@ -42,10 +28,25 @@ function renderOneTask(toDo) {
     const item = document.createElement("li");
 
     item.innerHTML = toDo.content;
-    item.cl
+    if (toDo.completed == true) {
+        item.classList.add("checked")
+    }
+    else if (toDo.completed == false) {
+        item.classList.remove("checked");
+    }
 
     return item;
 }
 
+function addTask() {
+    console.log("addTask ran")
+    let newTask = document.getElementById("newTask").value;
+    if (newTask == "")
+        return;
+    else {
+        toDoList.push({id: Date.now(), content: newTask, completed: false})
+        //console.log(toDoList);
+        showToDoList();
+    }
+}
 
-console.log(toDo)

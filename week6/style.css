@@ -86,7 +86,6 @@ a.menuItem {
 ul#toDoList {
     border-style: solid;
     border: black;
-    width: 100%;
     border-radius: 15px;
     position: relative;
     font-size: large;
@@ -97,7 +96,6 @@ ul#toDoList {
 ul#toDoList li {
     border-style: solid;
     border: black;
-    width: 100%;
     border-radius: 15px;
     position: relative;
     font-size: large;
