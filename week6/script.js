@@ -13,6 +13,7 @@ let toDoList = [
 
 window.addEventListener("load", () => { showToDoList(); });
 document.getElementById("submit").addEventListener("click",() => { addTask(); });
+document.getElementById("").addEventListener("click",() => { addTask(); });
 
 function showToDoList() {
     const toDoListElement = document.getElementById("toDoList");
@@ -45,8 +46,15 @@ function addTask() {
         return;
     else {
         toDoList.push({id: Date.now(), content: newTask, completed: false})
-        //console.log(toDoList);
+        document.getElementById("newTask").value = "";
         showToDoList();
     }
 }
 
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
