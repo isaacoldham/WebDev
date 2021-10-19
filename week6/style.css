@@ -92,6 +92,17 @@ a.menuItem {
     padding: auto;
 }
 
+ul#toDoList {
+    border-style: solid;
+    border: black;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    font-size: large;
+    padding: auto;
+    margin: 8px;
+}
+
 ul#toDoList li.listItem {
     border-style: solid;
     border: black;
