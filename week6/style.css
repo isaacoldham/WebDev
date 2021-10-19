@@ -99,6 +99,7 @@ ul#toDoList li {
     border-radius: 15px;
     position: relative;
     font-size: large;
+    padding: auto;
 }
 
 ul li.checked::before {
