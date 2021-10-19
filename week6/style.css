@@ -94,7 +94,7 @@ ul#toDoList {
     margin: 8px;
 }
 
-ul#toDoList li.listItem {
+ul#toDoList li {
     border-style: solid;
     border: black;
     width: 100%;
