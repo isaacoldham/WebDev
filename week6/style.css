@@ -103,6 +103,10 @@ ul#toDoList li.listItem {
     margin: 8px;
 }
 
+ul li.checked {
+    text-decoration:line-through;
+}
+
 ul li.checked::before {
     content: '';
     position: absolute;
