@@ -92,7 +92,7 @@ a.menuItem {
     padding: auto;
 }
 
-ul#toDoList li {
+ul#toDoList li.listItem {
     border-style: solid;
     border: black;
     width: 100%;
