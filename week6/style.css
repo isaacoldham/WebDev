@@ -99,7 +99,7 @@ ul#toDoList li {
 
 ul li.checked::before {
     content: '';
-    position: absolute;
+    position: relative;
     border-color: rgb(63, 63, 63);
     border-style: solid;
     border-width: 0 2px 2px 0;
