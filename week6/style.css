@@ -88,7 +88,8 @@ a.menuItem {
 
 #content {
     text-align: center;
-    width: 5em;
+    width: 30em;
+    padding: auto;
 }
 
 ul#toDoList li {
