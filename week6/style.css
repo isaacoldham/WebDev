@@ -89,6 +89,23 @@ a.menuItem {
 #content {
     text-align: center;
     width: 5em;
-    border: black;
-    border-width: 1cm;
 }
+
+ul#toDoList li {
+    border:black;
+    width: 100%;
+
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
