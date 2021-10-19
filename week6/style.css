@@ -46,15 +46,6 @@ a.menuItem {
     width: 300px;
 }
 
-#wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    text-align: center;
-}
-
 .items {
     font-weight: bold;
 }
