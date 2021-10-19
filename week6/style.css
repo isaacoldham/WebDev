@@ -98,9 +98,9 @@ ul#toDoList li.listItem {
     width: 100%;
     border-radius: 15px;
     position: relative;
-    font-size: x-large;
+    font-size: large;
     padding: auto;
-    margin: 4px;
+    margin: 8px;
 }
 
 ul li.checked::before {
