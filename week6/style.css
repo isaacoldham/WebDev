@@ -81,12 +81,16 @@ a.menuItem {
     text-align: center;
     width: 30em;
     padding: auto;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
 }
 
 ul#toDoList {
-    border-style: solid;
-    border: black;
-    border-radius: 15px;
     position: relative;
     font-size: large;
     padding: auto;
@@ -95,16 +99,15 @@ ul#toDoList {
 
 ul#toDoList li {
     border-style: solid;
-    border: black;
-    border-radius: 15px;
     position: relative;
     font-size: large;
     padding: auto;
     margin: 8px;
+    border-width: 1px;
 }
 
 ul li.checked {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 ul li.checked::before {
@@ -147,4 +150,14 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+
+
+.delete {
+    float: right;
+}
