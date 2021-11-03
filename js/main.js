@@ -27,6 +27,10 @@ const links = [
         label: "Week7",
         url: "week7/index.html"
     }
+    {
+        label: "Week8",
+        url: "week8/index.html"
+    }
 ]
 
 console.table(links);
