@@ -6,3 +6,10 @@ fetch('https://swapi.dev/api/people/')
     .then(response => response.json())
     .then(data => console.log(data));
 
+
+
+function loadNames() {
+    let response = await fetch('https://swapi.dev/api/people/');
+    let myObjects = await response.json();
+    console.log(myObjects);
+}
