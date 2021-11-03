@@ -12,10 +12,14 @@ async function loadNames() {
     let response = await fetch('https://swapi.dev/api/people/');
     let myObjects = await response.json();
     console.log(myObjects);
-    myObjects.foreach(element => {
-        document.getElementById("people").innerHTML += `<li> ${elements.results} </li>`
-
-    });
+    
+    return myObjects;
     // array1.forEach(element => console.log(element));
 }
 
+function displayNames() {
+loadNames().foreach(element => {
+    document.getElementById("people").innerHTML += `<li> ${element.results} </li>`
+
+});
+}
