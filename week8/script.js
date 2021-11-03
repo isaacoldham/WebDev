@@ -8,7 +8,7 @@ fetch('https://swapi.dev/api/people/')
 
 
 
-function loadNames() {
+async function loadNames() {
     let response = await fetch('https://swapi.dev/api/people/');
     let myObjects = await response.json();
     console.log(myObjects);
