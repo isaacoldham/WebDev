@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lyric Generator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body id="wrap">
+    <div id="header">
+        <h1>Lyric Generator</h1>
+    </div>
+    
+    <br><br><br>
+    <span>
+        Author:
+        <input type="text" id="author" value="">
+    </span>
+    <br><br>
+    <span>
+        Song Name:
+        <input type="text" id="songName" value="">
+    </span>
+    <br><br><br>
+    <input type="submit" id="submitButton" value="Submit">
+    <input type="reset" value="Clear">
+    
+
+    
+    <form action="addMySong" method="GET" id="mySongsLink">
+        <input type="hidden" id="authorInput" name="authorInput" value="">
+        <input type="hidden" id="songLyricsInput" name="songLyricsInput" value="">
+        <input type="hidden" id="songTitleInput" name="songNameInput" value="">
+    </form>
+    
+    <div id="loading"></div>
+    <div id="lyricsContainer"></div>
+    <br><br>
+</body>
+
+<script src="script.js"></script>
+
+</html>
