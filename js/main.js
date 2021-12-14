@@ -34,6 +34,10 @@ const links = [
     {
         label: "Week9",
         url: "week9/index.html"
+    },
+    {
+        label: "Final",
+        url: "https://frozen-mesa-14615.herokuapp.com/"
     }
 ]
 
