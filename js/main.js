@@ -41,7 +41,7 @@ const links = [
     },
     {
         label: "Final",
-        url: "FinalProject/home.html"
+        url: "https://frozen-mesa-14615.herokuapp.com/"
     }
 ]
 
