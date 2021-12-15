@@ -34,6 +34,9 @@ const links = [
     {
         label: "Week9",
         url: "week9/index.html"
+    },{
+        label: "Week10",
+        url: "week10/quakes.html"
     },
     {
         label: "Week11",
